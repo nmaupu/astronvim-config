@@ -36,6 +36,8 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
+          "haskell",
+          "sh",
           -- "python",
         },
       },
@@ -81,5 +83,9 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    --vim.api.nvim_create_autocmd({ "FileType" }, {
+    --  pattern = { "lua" },
+    --  callback = function() vim.b.autoformat = false end,
+    --})
   end,
 }
