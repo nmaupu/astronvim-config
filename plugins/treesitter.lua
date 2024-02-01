@@ -25,8 +25,6 @@ return {
       "gosum",
       "gowork",
       "gpg",
-      "haskell",
-      "haskell_persistent",
       "hcl",
       "html",
       "http",

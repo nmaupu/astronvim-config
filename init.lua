@@ -36,7 +36,6 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          "haskell",
           "sh",
           -- "python",
         },
@@ -87,5 +86,7 @@ return {
     --  pattern = { "lua" },
     --  callback = function() vim.b.autoformat = false end,
     --})
-  end,
+    vim.on_key(nil, vim.api.nvim_get_namespaces()["auto_hlsearch"])
+    vim.cmd[[highlight Search guibg=Purple]]
+    end,
 }
